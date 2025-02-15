@@ -9,5 +9,5 @@ spec:
     - protocol: TCP
       port: 80          # External port exposed by the service
       targetPort: 5000  # The port your Flask app is running on inside the container
-      nodePort: 31369   # Manually defining a NodePort (optional, must be between 30000-32767)
+      nodePort: 32000   # Manually defining a NodePort (optional, must be between 30000-32767)
   type: NodePort
