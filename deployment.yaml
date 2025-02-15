@@ -13,7 +13,8 @@ spec:
         app: flask
     spec:
       containers:
-      - name: flask-app
-        image: manusm123/flask-app:latest
-        ports:
-        - containerPort: 5000
+        - name: flask-app
+          image: manusm123/flask-app:latest  # Your Docker Hub username is correctly added
+          ports:
+            - containerPort: 5000
+          imagePullPolicy: Always  # Ensures the latest image is pulled
